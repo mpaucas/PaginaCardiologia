@@ -9,18 +9,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CARDIOFERROA - Centro Médico de Cardiología en Lima</title>
     <link rel="shortcut icon" href="assets/imagenes/heart.png" type="image/x-icon">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header class="hero">
         <div class="hero_container container">
-            <div class="hero_texts">
+            <div data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="1000" class="hero_texts">
                 <h1 class="hero_title">CARDIOFERROA</h1>
                 <p class="hero_copy">Consulta cardiologica efectiva en el diagnóstico y tratamiento completo de enfermedades cardiovasculares</p>
                 <a href="#" class="hero_cta">Más Sobre Nosotros</a>
             </div>
-            <div class="hero_img">
+            <div data-aos="fade-left" data-aos-anchor="#example-anchor"
+            data-aos-offset="500"
+            data-aos-duration="1000" class="hero_img">
                 <img src="assets/imagenes/logocardioferroa.png" alt="">
             </div>
         </div>
@@ -29,7 +34,8 @@
     <main class="main">
         <section class="instructor container">
             <div class="instructor_container">
-                <img src="assets/imagenes/portadaCardiologia.png" class="instructor_img">
+                <img data-aos="zoom-out-left" data-aos-easing="ease-in-sine"
+                data-aos-delay="200" src="assets/imagenes/portadaCardiologia.png" class="instructor_img">
                 <h2 class="instructor_name">CARDIOFERROA</h2>
                 <p class="instructor_tag">Sobre Nosotros...</p>
                 <p class="instructor_paragraph">Dirigido por el Dr. Perci Leonidas Paucas Ferroa se especializa en atención de enfermedades cardiovasculares.</p>
@@ -38,7 +44,7 @@
             </div>
         </section>
         <section class="about container">
-            <div class="about_course">
+            <div data-aos="fade-down-right" data-aos-easing="ease-in-sine" data-aos-delay="1000" class="about_course">
                 <h2 class="title title-border">
                     Prueba
                 </h2>
@@ -51,7 +57,7 @@
                 <a href="#" class="cta">Quisiera una cita</a>
             </div>
 
-            <figure class="about_picture">
+            <figure data-aos="fade-down-left" data-aos-easing="ease-in-sine" data-aos-delay="1000" class="about_picture">
                 <img src="assets/imagenes/mockup.png" class="about_img
                 ">
             </figure>
@@ -64,7 +70,7 @@
                 <p class="card_copy">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos doloremque reprehenderit, iusto inventore </p>
 
                 <div class="card_container">
-                    <div class="card_item">
+                    <div data-aos="zoom-in-down" data-aos-delay="1000" class="card_item">
                         <figure class="card_img">
                             <img src="assets/imagenes/servicio1.jpg" alt="">
                         </figure>
@@ -75,7 +81,7 @@
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos doloremque reprehenderit, iusto inventore 
                         </p>
                     </div>
-                    <div class="card_item">
+                    <div data-aos="zoom-in-down" data-aos-delay="1500" class="card_item">
                         <figure class="card_img">
                             <img src="assets/imagenes/servicio2.jpg" alt="">
                         </figure>
@@ -86,7 +92,7 @@
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos doloremque reprehenderit, iusto inventore 
                         </p>
                     </div>
-                    <div class="card_item">
+                    <div data-aos="zoom-in-down" data-aos-delay="2000" class="card_item">
                         <figure class="card_img">
                             <img src="assets/imagenes/servicio3.jpg" alt="">
                         </figure>
@@ -97,7 +103,7 @@
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos doloremque reprehenderit, iusto inventore 
                         </p>
                     </div>
-                    <div class="card_item">
+                    <div data-aos="zoom-in-down" data-aos-delay="2500" class="card_item">
                         <figure class="card_img">
                             <img src="assets/imagenes/servicio4.jpg" alt="">
                         </figure>
@@ -158,6 +164,11 @@
             </p>
         </div>
     </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
 
